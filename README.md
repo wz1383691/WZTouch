@@ -23,7 +23,7 @@ UIResponder提供了四个方法来响应点击事件：<br>
 ### 响应链形成<br>
 
 假设我们有下面的页面：
-![](file://///Users/james/Desktop/屏幕快照 2017-04-18 上午10.23.29.png)
+![](http://i2.muimg.com/567571/52cc519caa13c899.png)<br>
 
 AView上面添加了BView和CView，CView上面添加了DView，现在用户点击了DView，然后系统会接收到这个点击事件，然后调用
 ```
@@ -65,7 +65,7 @@ AView上面添加了BView和CView，CView上面添加了DView，现在用户点�
 }
 ```
 打印结果如下:<br>
-![](file://////Users/james/Desktop/屏幕快照 2017-04-18 上午10.52.32.png)<br>
+![](http://i2.muimg.com/567571/f4ca992e5a61ecd3.png)<br>
 这就是我们刚才点击事件的响应链，第一响应者就是DView。
 
 
