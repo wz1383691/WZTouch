@@ -32,7 +32,8 @@ AView上面添加了BView和CView，CView上面添加了DView，现在用户点�
 方法，该方法是判断点击的点是够在本对象内，如果返回true则继续调用
 ```
 - (nullable UIView *)hitTest:(CGPoint)point withEvent:(nullable UIEvent *)event;
-```，返回当前的这个对象，在我们上图的这歌机构中判断顺序是这样的：<br>
+```
+，返回当前的这个对象，在我们上图的这歌机构中判断顺序是这样的：<br>
 1.触摸的这个点坐标在AView上吗？true，然后AView加入响应链，继续遍历AView的子页面BView和CView。<br>
 2.在BView上吗？false。该分支结束。<br>
 3.在CView上吗？true，CView加入响应链，继续遍历CView的子视图DView。<br>
